@@ -7,16 +7,17 @@ Trong bài viết này, mình sẽ liệt kê những kiến thức theo thứ t
 Và xin lưu ý là không có gì bằng tài liệu chính chủ của facebook, nên nếu gặp từ khóa nào, thì nên vào trang chính của facebook nhé:  https://facebook.github.io/react/docs/
 
 ## 1. React installation
-Phải nói nếu bạn là người code jquery, hay javacript thuần thì khi chuyển sang React bạn phải gặp nhiều khái niệm gây cho bạn hoang mang tột độ.
+Phải nói nếu bạn là người code jquery, hay sử dụng các javascript framework thì khi chuyển sang React bạn phải gặp nhiều khái niệm gây cho bạn hoang mang tột độ.
 
 Các kiến thức cần biết khi học React:
-- Bebel ES6: là 1 chuẩn cú pháp mới của javascript, hỗ trợ nhiều hàm, các cú pháp viết tắt làm việc với mảng và object hiệu quả hơn.
-- Webpack: bởi vì ES6 là 1 chuẩn mới cho nên 1 số trình duyệt sẽ đọc không được, nên webpack sẽ biên dịch từ ES6 -> sang ES5 (hiện tại các trình duyệt đều đọc được). Mặc khác webpack có rất nhiều plugin cho phép bạn có thể biên dịch less, sass, postcss gôm chung vào 1 file.
+- ECMAScript 6 (ES6) : là 1 chuẩn mới của javascript, hỗ trợ nhiều hàm, các cú pháp viết tắt làm việc với mảng và object hiệu quả hơn.
+- Babel: ES6 là 1 chuẩn mới cho nên 1 số trình duyệt sẽ chưa hỗ trợ, nên babel sẽ `transpile` ES6 -> ES5(chuẩn hiện tại mà các trình duyệt đều đọc được).
+- Webpack: là một module bundler ( đóng gói các module ), hỗ trợ gói nhiều modules thành một, hoặc tách module ra thành nhiều phần để có thể tăng hiệu suất tải trang. Mặt khác webpack có rất nhiều plugin cho phép bạn có thể biên dịch less, sass, postcss gôm chung vào 1 file.
 - NPM (Node package manager): là trình quản lý các gói cài đặt trong app của bạn, khi viết react app bạn sẽ có nhiều component cài đặt do người khác chia sẻ. Sử dụng cái này thì cũng đơn giản thôi.
 
 Bạn thấy khá nhiều kiến thức đấy, nhưng đừng lo, bạn chỉ cần biết bất nhiêu là đủ, chúng ta sẽ hiểu sâu qua các bài viết thực hành.
 
-Trước đây ở những phiên bản đầu tiên, để cài đặt 1 app React thì khá phức tạp với các bạn beginer, đôi khi cài không được sẽ khiến các bạn chán nản. 
+Trước đây ở những phiên bản đầu tiên, để cài đặt 1 app React thì khá phức tạp với các bạn beginner, đôi khi cài không được sẽ khiến các bạn chán nản. 
 
 Tuy nhiên facebook nó cho ra mắt 1 package tên là *create-react-app*, nó giúp bạn tạo 1 ứng dụng React trong vòng 1 nốt nhạc
 
@@ -40,9 +41,10 @@ React sử dụng cú pháp JSX, vì vậy khi bạn sử dụng các editor th�
 - SublimeText: đây là 1 cái tên quá quen thuộc, ưu điểm nhanh gọn lẹ, nhiều plugins, nhược điểm là suggestion chưa tốt.
 - Atom: tương tự như sublimetext, nhược điểm khởi động lần đâu lâu
 - Nuclie: đây là 1 plguin của Atom 
+- Visual Studio Code: Open Source tool từ Microsoft
 
 ## 3. Learning ES6
-Với sự ra đời của ES6, thừa hưởng các cú pháp từ python, ruby, java, javascript trở nên linh bởi tính linh hoạt, cú pháp ngắn gọn dễ hiểu, nên hầu như đều được áp dụng trong mọi ứng dụng bằng Javascript hiện nay trong: Nodejs Server, web app, ...
+Với sự ra đời của ES6, thừa hưởng các cú pháp từ python, ruby, java, javascript trở nên linh bởi tính linh hoạt, cú pháp ngắn gọn dễ hiểu, nên hầu như đều được áp dụng trong mọi ứng dụng bằng Javascript hiện nay trong: Nodejs , web app, ...
 Để nói về ES6 thì có rất nhiều, nhưng mình xin nói về một số tính năng đặc biết hay sử dụng nhiều nhất:
 - Arrow functions
 - Scoping
